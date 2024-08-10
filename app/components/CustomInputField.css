@@ -1,0 +1,51 @@
+.custom-input-container {
+    position: relative;
+    margin-top: 24px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .input-label {
+    position: absolute;
+    top: 16px;
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+  }
+  
+  .input-wrapper.focused .input-label,
+  .input-wrapper.focused input:not(:placeholder-shown) + .input-label {
+    top: -12px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .input-wrapper.focused input {
+    border-color: #6200ee;
+    border-width: 2px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 16px 10px 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.2s ease-out;
+  }
+  
+  input::placeholder {
+    color: transparent;
+  }
+  
+  input:focus {
+    border-color: #6200ee;
+    border-width: 2px;
+  }
+  
